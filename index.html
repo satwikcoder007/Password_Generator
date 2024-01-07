@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- wrapper -->
+   <div class="relative h-screen w-screen flex justify-center items-center bg-purple-500">
+        <!-- content-->
+        <div class="relative w-[300px] "> 
+            <!-- heading -->
+            <h1 class="relative text-white text-[18px] font-bold ml-[45px]">PASSWORD GENERATOR</h1>
+            <!-- PASSWORD -->
+            <div class="box-border flex justify-around mt-[20px]  bg-violet-950 rounded-lg">
+                <input type="text" value="PASSWORD" id="target" class="h-[40px] w-[250px] text-yellow-400 flex items-center justify-start font-bold  bg-violet-950 ">
+                <button class="" type="button" onclick="myFunction()"><i class="fa-regular fa-clone"></i></button>
+            </div>
+            <!-- herosection -->
+            <div class=" relative box-border mt-[20px]  bg-violet-950 rounded-lg">
+
+                <div class="flex justify-start"><h2 class="relative text-white text-[16px] font-medium p-[20px]">PASSWORD LENGTH</h2> <span class="text-yellow-400 mt-[18px] font-medium ml-[50px]" id="value"></span></div>
+                <!-- range slider -->
+                <div class="slidecontainer ml-[20px]">
+                    <input type="range" min="1" max="20" value="10" class="w-[250px]" id="myRange" >
+                </div>
+                <!-- checkbox -->
+                <input type="checkbox" class="ml-[20px] mt-[10px]" id="upper"> <span class="text-white"> Include Upper Case Letters</span><br>
+                <input type="checkbox" class="ml-[20px] mt-[10px]" id="lower"> <span class="text-white"> Include Lower Case Letters</span><br>
+                <input type="checkbox" class="ml-[20px] mt-[10px]" id="number"> <span class="text-white"> Include Numbers</span><br>
+                <input type="checkbox" class="ml-[20px] mt-[10px]" id="special"> <span class="text-white"> Include Special Charecter</span><br>
+                <!-- strength -->
+                <div class="flex justify-start items-center relative mt-[15px]">
+                    <h1 class="ml-[20px] text-white text-[16px] font-medium ">Strength</h1>
+                    <span id="strength">
+                        <span class="box-border h-[25px] w-[25px] rounded-full bg-gradient-to-l from-white to-transparent  ml-[150px] shadow-2xl flex items-center justify-center">
+                            <span class="box-border h-[15px] w-[15px] rounded-full bg-white  shadow-2xl"></span>
+                        </span>
+                    </span>
+                    
+                </div>
+
+                <!-- button -->
+                <button class="mt-[20px] box-border bg-purple-500 mx-[20px]  flex items-center justify-center h-[30px] w-[255px] rounded-md text-white font-bold" type="button" onclick="hero()">GENERATE PASSWORD</button> <br>
+                
+                
+    
+
+            </div>
+        </div>
+   </div>
+</body>
+<script src="abc.js"></script>
+<script src="https://kit.fontawesome.com/abe7690f90.js" crossorigin="anonymous"></script>
+</html>
